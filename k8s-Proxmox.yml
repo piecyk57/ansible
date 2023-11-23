@@ -41,7 +41,7 @@
         insertafter: EOF
         line: 'br_netfilter'
       become: true
-    - name: Restartuj host
+    - name: Restart host
       shell: "sudo shutdown -r now"
       async: 1
       poll: 0
