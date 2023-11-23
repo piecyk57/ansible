@@ -15,7 +15,7 @@
         state: directory
     - name: copy config to directory
       ansible.builtin.get_url:
-        url: config.toml
+        url: https://github.com/piecyk57/ansible/blob/main/config.toml
         dest: /etc/containerd
     - name: Restart Containerd
       service:
